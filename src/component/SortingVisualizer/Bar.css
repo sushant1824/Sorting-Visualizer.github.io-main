@@ -1,0 +1,38 @@
+.bar {
+    border-radius: 5px 5px 0 0;
+    width: 27px;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+.text {
+    border: none;
+    background: transparent;
+    text-align: center;
+    /* transform: rotate(-90deg); */
+    outline: none;
+}
+
+.quantity-btn {
+    position: relative;
+    text-align: center;
+    border: none;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    color: white;
+    /* padding: 0.3rem 0; */
+    width: 27px;
+}
+
+.quantity-btn::hover{
+    opacity: 0.5;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #00828c;
+    color: white;
+}
+
+.logo{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 15px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.items:hover,.logout:hover{
+    color: aqua;
+}
+
+.items{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+
+.list-items{
+    color: black;
+    text-decoration: none;
+}
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    list-style-type: none;
+  }
+  
+.items:hover .dropdown-content {
+    display: block;
+  }
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #005469;
+        left: 0;     
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        z-index: 100;
+    }   
+
+    .items{
+        text-align: center;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #ffffff00;
+        border: none;
+        outline: none;
+        right: 25px;
+        width: 20%;
+    }
+}
